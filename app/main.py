@@ -3,13 +3,16 @@ from fastapi import FastAPI
 from app.db import database, User
 
 
-app = FastAPI(title="FastAPI, Docker, and Traefik")
+app = FastAPI(title="FastAPI, Docker, and Mizan")
 
 
 @app.get("/")
 async def read_root():
     return await User.objects.all()
 
+@app.get("/hello")
+async def index():
+    return {'this is sdfsda mizan'}
 
 @app.on_event("startup")
 async def startup():

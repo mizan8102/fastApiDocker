@@ -101,3 +101,9 @@ This project demonstrates how to containerize a FastAPI application with Postgre
     Open [http://127.0.0.1:8000](http://127.0.0.1:8000) to see the FastAPI application running.
 
 ## [Details Link] (https://docs.google.com/document/d/1cewA8IJ9TPw-_InoyrFaXQsSRYnjNZstvwow5rtgikk/edit?usp=sharing)
+
+
+## RUN CMD 
+
+  docker-compose down -v
+  docker-compose up -d --build
